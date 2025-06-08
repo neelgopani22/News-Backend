@@ -1,8 +1,9 @@
 import { Router } from "express";
-import { getNews } from "../controllers/news.controller";
+import { getNewsPage, getNewsNewer } from "../controllers/news.controller";
 
 const router = Router();
 
-router.get("/news", getNews);
+router.get("/news", getNewsPage as any);
+router.get("/news/newer", getNewsNewer as any);
 
 export default router;
