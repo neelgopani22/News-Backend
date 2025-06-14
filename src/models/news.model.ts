@@ -2,8 +2,6 @@ import mongoose, { Schema } from "mongoose";
 import { getDB1Connection } from "..";
 import { News } from "../interface/news.interface";
 
-const ObjectId = Schema.Types.ObjectId;
-
 const NewsSchema = new Schema<News>(
   {
     id: {
